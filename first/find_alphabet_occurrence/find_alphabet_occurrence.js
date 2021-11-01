@@ -28,5 +28,6 @@ const findMaxOccurredAlphabet1 = (string) => {
 };
 
 const result1 = findMaxOccurredAlphabet1(string);
+
 console.log(result1);
 //const result2 = findMaxOccurredAlphabet2(string);
