@@ -27,7 +27,52 @@ const findMaxOccurredAlphabet1 = (string) => {
   return array[max_alphabet_index];
 };
 
-const result1 = findMaxOccurredAlphabet1(string);
+const findMaxOccurredAlphabet2 = (string) => {
+  const alphabetArray = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "x",
+    "y",
+    "z",
+  ];
+  let max_occurrence = 0;
+  let max_alphabet = alphabetArray[0];
+  let occurrence = 0;
+  for (let i = 0; i < alphabetArray.length; i++) {
+    occurrence = 0;
+    for (let j = 0; j < string.length; j++) {
+      if (string[j] == alphabetArray[i]) {
+        occurrence += 1;
+        if (occurrence > max_occurrence) {
+          max_alphabet = string[j];
+          max_occurrence = occurrence;
+        }
+      }
+    }
+  }
+  return max_alphabet;
+};
 
-console.log(result1);
-//const result2 = findMaxOccurredAlphabet2(string);
+const result1 = findMaxOccurredAlphabet1(string);
+const result2 = findMaxOccurredAlphabet2(string);
+console.log("result1:", result1, "result2:", result2);
