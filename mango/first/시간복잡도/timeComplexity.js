@@ -19,3 +19,9 @@ result = findMaxPlusOrMultiply(input);
 console.log(result);
 
 // 시간 복잡도 O(N)
+
+// 영어로 된 문자열이 있을때 반복되지않는 첫번재 문자를 반환.
+// 만약그런 문자가없으면 '_'를 반환,
+// "abadabac" 반복되지않는 문자 :d, c 이면 첫번째 문자인 d를 반환하면 o
+
+const input2 = "abadabac";

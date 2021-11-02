@@ -21,15 +21,5 @@ print(result)
 
 
 
-# 영어로 된 문자열이 있을때 반복되지않는 첫번재 문자를 반환.
-# 만약그런 문자가없으면 '_'를 반환, 
-# "abadabac" 반복되지않는 문자 :d, c 이면 첫번째 문자인 d를 반환하면 o 
-
-input2 = "abadabac"
-def find_not_repeating_first_character(string):
-    for str in string:
-        print(str)
 
 
-
-find_not_repeating_first_character(input2)
