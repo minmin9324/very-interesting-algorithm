@@ -36,7 +36,7 @@ function solution_refactoring(num1, num2, num3) {
     minNum = num1;
   }
   if (minNum > num3) {
-    minNum = nu3;
+    minNum = num3;
   }
   return minNum;
 }
