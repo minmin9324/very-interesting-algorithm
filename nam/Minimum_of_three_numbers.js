@@ -28,5 +28,18 @@ function solution(num1, num2, num3) {
   return minNum;
 }
 
-const test = solution(1, 5, 10);
+function solution_refactoring(num1, num2, num3) {
+  let minNum;
+  if (num1 > num2) {
+    minNum = num2;
+  } else {
+    minNum = num1;
+  }
+  if (minNum > num3) {
+    minNum = nu3;
+  }
+  return minNum;
+}
+
+const test = solution_refactoring(1, 5, 10);
 console.log(test);
