@@ -15,13 +15,8 @@ function solution(height) {
   for (let i = 0; i < 8; i++) {
     for (let j = i + 1; j < 9; j++) {
       if (sum - (height[i] + height[j]) == 100) {
-        if (i < j) {
-          result.splice(j, 1);
-          result.splice(i, 1);
-        } else {
-          result.splice(i, 1);
-          result.splice(j, 1);
-        }
+        result.splice(j, 1);
+        result.splice(i, 1);
         return result;
       }
     }
